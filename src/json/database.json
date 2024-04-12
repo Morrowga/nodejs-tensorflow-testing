@@ -1,0 +1,10 @@
+[
+    {
+        "path": "src/products/cr7.jpg",
+        "category": "Cr7"
+    },
+    {
+        "path": "src/products/messi.jpg",
+        "category": "Messi"
+    }
+]
