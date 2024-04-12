@@ -1,12 +1,7 @@
-const { createWorker } = require('tesseract.js');
 const tf = require('@tensorflow/tfjs-node');
 const cocoSsd = require('@tensorflow-models/coco-ssd');
 
 let model; 
-
-const referenceImages = {
-  'cr7': '/src/products/cr7.jpg',
-};
 
 (async () => {
     try {
@@ -22,10 +17,6 @@ const referenceImages = {
 async function initializeDetection(imageBuffer)
 {
     const objects = await detectObjects(imageBuffer);
-
-    // const person = '';
-
-    // console.log(objects[0].class);
 
     return objects
 }
